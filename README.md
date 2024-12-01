@@ -1,2 +1,2 @@
 Pharmacy-inventory-sys
-![zogaga](public/images/photo1.PNG)
+![photo1](public%20image/photo1.PNG)
