@@ -1,0 +1,124 @@
+/* إعدادات أساسية */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e6f2f1;
+}
+
+.container {
+    display: flex;
+    width: 100vw; /* العرض كامل الشاشة */
+    height: 100vh; /* الارتفاع كامل الشاشة */
+    background-color: #ffffff;
+}
+
+/* قسم الصورة */
+.image-section {
+    flex: 1; /* يشغل نصف الشاشة */
+    background-color: #9BCEF3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* قسم النموذج */
+.form-section {
+    flex: 1; /* يشغل النصف الآخر */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    position:relative;
+}
+
+/* زر Back */
+.back-link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: #50B4FC;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.back-link svg {
+    margin-right: 8px;
+}
+
+/* النصوص والعنوان */
+h1 {
+    font-size: 36px;
+    color: #333333;
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+p {
+    font-size: 15px;
+    color: #666666;
+    margin-bottom: 30px;
+    text-align: start;
+}
+
+/* النموذج */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* الحقول */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+input,
+select {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    background-color: #50B4FC;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #9BCEF3;
+}

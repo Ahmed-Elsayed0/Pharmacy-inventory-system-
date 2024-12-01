@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Doctor</title>
+    <link rel="stylesheet" href="signupdoctors.css">
+</head>
+<body>
+    <div class="container">
+        <!-- قسم الصورة -->
+        <div class="image-section">
+            <img src="/Users/fayad/Desktop/pharmacy code/photo1.png" alt="Signup Image">
+        </div>
+
+        <!-- قسم النموذج -->
+        <div class="form-section">
+            <!-- زر Back -->
+            <a href="signup.html" class="back-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H3.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L3.707 7.5H14.5a.5.5 0 0 1 .5.5z"/>
+                </svg>
+                Back
+            </a>
+
+            <!-- المحتوى -->
+            <div class="content">
+                <h1>Account Signup Doctor</h1>
+                <p>Track your inventory, sales, and prescriptions seamlessly.</p>
+
+                <!-- النموذج -->
+                <form>
+                    <!-- Full Name -->
+                    <div class="form-group">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" placeholder="Enter your full name" required>
+                    </div>
+                    
+                    <!-- Email Address -->
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your email address" required>
+                    </div>
+                    
+                    <!-- Phone and City -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" placeholder="Enter your phone number" required pattern="^[0-9]+$" title="Only numbers are allowed">
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" id="city" placeholder="Enter your city" list="city-list" required>
+                            <datalist id="city-list">
+                                <option value="Alexandria">Alexandria</option>
+                                <option value="Aswan">Aswan</option>
+                                <option value="Asyut">Asyut</option>
+                                <option value="Beheira">Beheira</option>
+                                <option value="Beni Suef">Beni Suef</option>
+                                <option value="Cairo">Cairo</option>
+                                <option value="Dakahlia">Dakahlia</option>
+                                <option value="Damietta">Damietta</option>
+                                <option value="Faiyum">Faiyum</option>
+                                <option value="Gharbia">Gharbia</option>
+                                <option value="Giza">Giza</option>
+                                <option value="Ismailia">Ismailia</option>
+                                <option value="Kafr El Sheikh">Kafr El Sheikh</option>
+                                <option value="Luxor">Luxor</option>
+                                <option value="Matrouh">Matrouh</option>
+                                <option value="Minya">Minya</option>
+                                <option value="Monufia">Monufia</option>
+                                <option value="New Valley">New Valley</option>
+                                <option value="North Sinai">North Sinai</option>
+                                <option value="Port Said">Port Said</option>
+                                <option value="Qalyubia">Qalyubia</option>
+                                <option value="Qena">Qena</option>
+                                <option value="Red Sea">Red Sea</option>
+                                <option value="Sharqia">Sharqia</option>
+                                <option value="Sohag">Sohag</option>
+                                <option value="South Sinai">South Sinai</option>
+                                <option value="Suez">Suez</option>
+
+                            </datalist>
+                        </div>
+                    </div>
+                    
+                    <!-- License and Gender -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="license">License</label>
+                            <input type="text" id="license" placeholder="Enter your license" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <input type="text" id="gender" placeholder="Enter your gender" list="gender-list" required>
+                            <datalist id="gender-list">
+                                <option value="Male">
+                                <option value="Female">
+                            </datalist>
+                        </div>
+                    </div>
+                    
+                    <!-- Password -->
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password" required>
+                    </div>
+                    
+                    <!-- زر الإرسال -->
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
